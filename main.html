@@ -223,13 +223,15 @@
             display: flex;
         }
 
-        .modal-content {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 800px;
-        }
+      .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh; /* Limit the height of the modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
 
         .close {
             float: right;
@@ -239,10 +241,12 @@
 
         /* Image Grid */
         .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-        }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    max-height: 60vh; /* Limit the height of the image grid */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
 
         .image-grid img {
             width: 100%;
